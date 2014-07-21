@@ -22,7 +22,9 @@ Next, add the facade `app/config/app.php`.
 
 And now build something awesome.
 
-## Usage via Facade
+## Usage
+
+`app/controllers/CartController.php`
 
 ```php
 <?php
@@ -49,6 +51,12 @@ class CartController extends ShopController {
 		// ... create the Response
 	}
 }
+```
+
+`app/Shop/Cart/AddItemToCartCommandHandler.php`
+
+```php
+<?php
 
 use Wegnermedia\Commander\CommandHandlerInterface;
 
